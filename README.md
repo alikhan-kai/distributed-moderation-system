@@ -59,6 +59,7 @@ $timer = [System.Diagnostics.Stopwatch]::StartNew()
 $timer.Stop()
 $rps = [math]::Round($totalRequests / $timer.Elapsed.TotalSeconds, 2)
 Write-Host "ИТОГОВЫЙ RPS: $rps" -ForegroundColor Green -BackgroundColor Black
+
 Итог: В ходе тестов система показала результат 355.0 RPS, что подтверждает высокую эффективность реактивного стека.
 
 Внутренняя логика
